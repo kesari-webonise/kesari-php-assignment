@@ -1,0 +1,39 @@
+<html>
+	<head>
+		<title>File handling</title>
+	</head>
+	<body>
+		<form method="post" action="createFile.php">
+			Enter File name : <input type="text" name="filename">
+			<input type="submit" name="createFile" value="Create file">
+		</form>
+		<form method="post" action="readFile.php">
+			Enter File name : <input type="text" name="filename">
+			<input type="submit" name="readFile" value="Read file">
+		</form>
+		<form method="post" action="writeFile.php">
+			Enter File name : <input type="text" name="filename">
+			Enter data : <input type="text" name="data">
+			<input type="submit" name="readFile" value="Write file">
+		</form>
+		<form method="post" action="appendFile.php">
+			Enter File name : <input type="text" name="filename">
+			Enter data : <input type="text" name="data">
+			<input type="submit" name="readFile" value="Append file">
+		</form>
+		<form method="post" action="fileuploadread.php" enctype="multipart/form-data">
+			<input type="file" name="filename">
+			<input type="submit" value="Upload to Read">
+		</form>
+		<form method="post" action="fileuploadwrite.php" enctype="multipart/form-data">
+			Enter data : <input type="text" name="data">
+			<input type="file" name="filename">
+			<input type="submit" value="Upload to Write">
+		</form>
+		<form method="post" action="fileuploadappend.php" enctype="multipart/form-data">
+			Enter data : <input type="text" name="data">
+			<input type="file" name="filename">
+			<input type="submit" value="Upload to Append">
+		</form>
+	</body>
+</html>
