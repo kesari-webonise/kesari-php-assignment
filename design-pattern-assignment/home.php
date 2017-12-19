@@ -26,7 +26,6 @@ if(!isset($_SESSION['session_id'])){
 		<title>Home Page</title>
 	</head>
 	<body>
-		<form method="post" action="checkout.php">
 			<table style="border:1px solid black">
 				 <caption><h1>BOOK DETAILS</h1></caption>
 				<tr>
@@ -52,7 +51,6 @@ if(!isset($_SESSION['session_id'])){
 				</tr>
 				<?php } ?>
 			</table>
-		</form>
 		<form method="post" action="checkout.php">
 			<h1>Buy Book</h1>
 			Book Name : <select name="bookName">
